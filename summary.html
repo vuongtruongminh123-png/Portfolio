@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Cá Nhân | Tổng Kết</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .summary-section {
+            padding-top: 8rem;
+            padding-bottom: 5rem;
+        }
+
+        .summary-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .summary-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .summary-panel {
+            padding: 3rem;
+        }
+
+        .summary-panel h2 {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            color: var(--accent-color);
+            margin-bottom: 1.5rem;
+        }
+
+        .summary-panel h2::before {
+            content: '';
+            display: block;
+            width: 8px;
+            height: 30px;
+            background: linear-gradient(to bottom, var(--accent-color), var(--secondary-accent));
+            border-radius: 4px;
+        }
+
+        .skills-list {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .skills-list li {
+            background: rgba(139, 92, 246, 0.15);
+            color: #d8b4fe;
+            /* lighter violet */
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            border: 1px solid rgba(139, 92, 246, 0.3);
+            font-weight: 500;
+        }
+
+        .split-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .split-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .summary-panel {
+                padding: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="container nav-container">
+            <div class="logo">MyPortfolio.</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="about.html">Về bản thân</a></li>
+                <li><a href="projects.html">Dự án</a></li>
+                <li><a href="summary.html" class="active">Tổng kết</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <section class="section summary-section container">
+            <div class="summary-header">
+                <h1>Tổng Kết Dự Án</h1>
+                <p>Nhìn lại chặng đường học tập và xây dựng Portfolio</p>
+            </div>
+
+            <div class="summary-grid">
+
+                <!-- Trải nghiệm và Cảm nhận -->
+                <div class="glass-panel summary-panel">
+                    <h2>Trải nghiệm & Cảm nhận</h2>
+                    <p>Trong quá trình thực hiện dự án Portfolio cá nhân này, em đã có cơ hội hệ thống hóa lại toàn bộ
+                        kiến thức của môn học. Việc tự tay tổng hợp các bài tập và thiết kế một không gian kỹ thuật số
+                        riêng không chỉ là một bài tập bắt buộc mà còn là một trải nghiệm thú vị giúp em nhìn nhận lại
+                        sự tiến bộ của bản thân.</p>
+                </div>
+
+                <!-- Kiến thức và Kỹ năng -->
+                <div class="glass-panel summary-panel">
+                    <h2>Kiến thức & Kỹ năng Đạt Được</h2>
+                    <p>Qua 6 bài tập lớn nhỏ, em đã tích lũy và thực hành thành thạo các kỹ năng số quan trọng:</p>
+                    <ul class="skills-list">
+                        <li>Quản lý tệp tin khoa học</li>
+                        <li>Tìm kiếm học thuật nâng cao</li>
+                        <li>Kỹ năng viết Prompt cho AI</li>
+                        <li>Sử dụng Notion / Trello làm việc nhóm</li>
+                        <li>Sáng tạo nội dung với AI</li>
+                        <li>Liêm chính học thuật</li>
+                        <li>Thiết kế Web (HTML/CSS)</li>
+                    </ul>
+                </div>
+
+                <!-- Tâm đắc và Thách thức -->
+                <div class="split-grid">
+                    <div class="glass-panel summary-panel">
+                        <h2>Điểm Tâm Đắc Nhất</h2>
+                        <p>Điều em cảm thấy tâm đắc nhất trong dự án này là việc học được cách **giao tiếp hiệu quả với
+                            Trí tuệ nhân tạo (Prompt Engineering)**. Thay vì những câu lệnh chung chung, việc biết cách
+                            đặt ngữ cảnh và yêu cầu chi tiết đã giúp em khai thác tối đa sức mạnh của AI trong việc tạo
+                            ra nội dung và hỗ trợ học tập.</p>
+                    </div>
+
+                    <div class="glass-panel summary-panel">
+                        <h2>Thách Thức Gặp Phải</h2>
+                        <p>Thách thức lớn nhất mà em gặp phải là **xây dựng và thiết kế trang Portfolio**. Tuy nhiên,
+                            với sự hỗ trợ từ các công cụ AI, em đã vượt qua rào cản kỹ thuật để tạo ra một trang web có
+                            giao diện hiện đại, thể hiện rõ nét tính cá nhân và sự chuyên nghiệp đúng với tiêu chí điểm
+                            Xuất sắc.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Vương Trường Minh. Được xây dựng cho môn Nhập môn Công nghệ số.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

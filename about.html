@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Cá Nhân | Về Bản Thân</title>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .about-section {
+            padding-top: 8rem;
+            padding-bottom: 5rem;
+        }
+
+        .about-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+        }
+
+        .info-item {
+            margin-bottom: 1.5rem;
+        }
+
+        .info-label {
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--accent-color);
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+
+        .info-value {
+            font-size: 1.125rem;
+            color: var(--text-primary);
+            font-weight: 500;
+        }
+
+        h3 {
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="container nav-container">
+            <div class="logo">MyPortfolio.</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="about.html" class="active">Về bản thân</a></li>
+                <li><a href="projects.html">Dự án</a></li>
+                <li><a href="summary.html">Tổng kết</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <section class="section about-section container">
+            <div class="about-header">
+                <h1>Về Bản Thân</h1>
+                <p>Thông tin cá nhân và mục tiêu phát triển của em.</p>
+            </div>
+
+            <div class="glass-panel">
+                <div class="about-grid">
+                    <div>
+                        <div class="info-item">
+                            <div class="info-label">Họ và Tên</div>
+                            <div class="info-value">Vương Trường Minh</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Ngành Học</div>
+                            <div class="info-value">Trí tuệ nhân tạo</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Trường</div>
+                            <div class="info-value">Đại học Công nghệ - ĐHQGHN</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Sở Thích</div>
+                            <div class="info-value">Nghe nhạc, chơi thể thao, chơi game,...</div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Mục Tiêu Học Tập</h3>
+                        <p>Cố gắng đạt bằng giỏi đến xuất sắc khi ra trường, và đạt học bổng 2 - 3 kỳ. Phát triển công
+                            nghệ liên quan đến lĩnh vực sinh học, y tế và có thể hướng đến việc phát triển nhiều công
+                            nghệ tiên tiến trong tương lai như thể thao,...</p>
+
+                        <h3 style="margin-top: 2rem;">Mục Tiêu Portfolio</h3>
+                        <ul
+                            style="color: var(--text-secondary); margin-left: 1.5rem; margin-bottom: 1.5rem; line-height: 1.6;">
+                            <li style="margin-bottom: 0.5rem;"><strong>Lưu trữ và nhìn lại:</strong> Nơi tập hợp các bài
+                                tập lớn, báo cáo nghiên cứu và những dòng code đầu tiên trong năm học qua, từ đó tự đánh
+                                giá sự tiến bộ của bản thân.</li>
+                            <li style="margin-bottom: 0.5rem;"><strong>Rèn luyện kỹ năng số:</strong> Tự học cách sử
+                                dụng các công cụ công nghệ (như Git, Markdown, các nền tảng tạo trang web) để trình bày
+                                sản phẩm khoa học, chuyên nghiệp ngay từ năm đầu đại học.</li>
+                            <li style="margin-bottom: 0.5rem;"><strong>Chuẩn bị hành trang sớm:</strong> Tạo thói quen
+                                cập nhật portfolio định kỳ để sẵn sàng làm hồ sơ xin thực tập hoặc tham gia vào các
+                                phòng nghiên cứu (Lab) của trường.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Vương Trường Minh. Được xây dựng cho môn Nhập môn Công nghệ số.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
